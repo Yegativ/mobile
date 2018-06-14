@@ -1,0 +1,11 @@
+#popupNew{
+text-align: center;
+}
+.ui-flipswitch{
+    float: right;
+    margin-top: 14px;
+}
+.option span{
+    padding: 6px;
+    display: inline-block;
+}

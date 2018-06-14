@@ -1,0 +1,31 @@
+#slider{
+    overflow: hidden;
+    height: 200px;
+    width: 360px;
+    margin:25px auto 0 auto;
+    background: #000;
+    position: relative;
+}
+#list{
+    position: absolute;
+    top:0;
+    left:0;
+    margin:0;
+    padding:0;
+    height: 100%;
+    width: 9999px;
+    transition: left .1s ease-out;
+    font-size: 0;
+}
+.slide{
+    display: inline-block;
+    height:inherit;
+    width: 360px;
+    font-size: 20px;
+}
+.slide:nth-child(1){
+    background: #FFBF00;
+}
+img{
+    width: 100%;
+}

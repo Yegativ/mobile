@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>tittle</title>
+    <script src="jq/jquery.js"></script>
+    <script src="jq/jquery.mobile-1.4.5.js"></script>
+    <link rel="stylesheet" href="jq/jquery.mobile-1.4.5.css">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div role="main" data-role="page" class="ui-body-b">
+        <div data-role="header" id="header">
+            <h1>Список</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <a  href="#popupNew" data-rel="popup" data-position-to="window" class="ui-btn-inline ui-btn ui-icon-plus ui-btn-icon-notext" data-rel="back"></a>
+            <br>
+            <div role="main" class="ui-content">
+            <ul id="list" data-role="listview">
+                <li data-role="list-divider">Список учеников</li>
+            </ul>
+            </div>
+        </div>
+        <div data-role="popup" data-overlay-theme="b" id="popupNew" data-transition=”pop”>
+            <div data-theme="a" data-role="header">
+                <h1>Добавление</h1>
+            </div>
+            <div role="main" class="ui-content">
+                <p>Добавьте нового человека</p>
+                <input type="text" id="text_add">
+                <a href="#" class="ui-btn-inline ui-btn" data-rel="back" id="add">ОК</a>
+                <a href="#" class="ui-btn-inline ui-btn" data-rel="back">Отмена</a>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+</html>

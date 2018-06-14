@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>tittle</title>
+    <script src="jq/jquery.js"></script>
+    <script src="jq/jquery.mobile-1.4.5.js"></script>
+    <link rel="stylesheet" href="jq/jquery.mobile-1.4.5.css">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main" data-role="page" class="ui-body-b">
+
+        <div data-role="header" id="header">
+            <h1>Уведомление</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <div class="option">
+                <input  type="checkbox" data-role="flipswitch" name="theme" id="theme">
+            </div>
+            <a href="#popupNew" data-rel="popup" data-position-to="window" class="ui-btn">Сохранить</a>
+            <a id="enable" data-position-to="window" class="ui-btn">Изменить</a>
+        </div>
+
+        <div data-role="popup" data-overlay-theme="b" id="popupNew" data-transition=”pop”>
+            <div data-theme="a" data-role="header">
+            <h1>Сохранение</h1>
+            </div>
+            <div role="main" class="ui-content">
+                <p>Вы уверены что хоите сохранить изменения?</p>
+                <a href="#" class="ui-btn-inline ui-btn" data-rel="back" id="save">ОК</a>
+                <a href="#" class="ui-btn-inline ui-btn" data-rel="back">Отмена</a>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

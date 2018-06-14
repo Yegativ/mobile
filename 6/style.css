@@ -1,0 +1,29 @@
+#bars{
+    border-radius: 75%;
+}
+#menu a{
+    border-radius: 5px;
+}
+#bars2{
+    border-radius: 75%;
+}
+img{
+    width: 50%;
+    max-width: 400px;
+    display: block;
+    margin: auto;
+    border: 5px solid white;
+    border-radius: 50%;
+}
+#one{
+    text-align: center;
+}
+#button_allinfo{
+    width: 50%;
+    margin-left: 70px;
+    height: 50%;
+}
+
+h4{
+    margin-left: 50px;
+}

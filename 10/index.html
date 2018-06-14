@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <script src="jq/jquery.js"></script>
+    <script src="jq/jquery.mobile-1.4.5.js"></script>
+    <link rel="stylesheet" href="jq/jquery.mobile-1.4.5.css">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main" data-role="page" class="ui-body-b">
+        <div data-role="header">
+            <h1>Настройки</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <a href="#popupNew" data-rel="popup" data-position-to="window" class="ui-btn">Сохранить</a>
+        </div>
+        <div role="main" class="ui-content">
+        <ul data-role="listview">
+            <li data-role="list-divider">Тема</li>
+            <li>Светлая тема <input  type="checkbox" data-role="flipswitch" name="theme" id="theme"></li>
+
+        </ul>
+            <ul data-role="controlgroup">
+                <label>
+                    <input type="radio" checked name="dva" id="gray"><p>Серый</p>
+                </label>
+                <label>
+                    <input type="radio" checked name="dva" id="green"><p>Зеленый</p>
+                </label>
+                <label>
+                    <input type="radio" checked name="dva" id="blue"><p>Синий</p>
+                </label>
+                <label>
+                    <input type="radio" checked name="dva" id="purple"><p>Фиолетовый</p>
+                </label>
+                <label>
+                    <input type="radio" checked name="dva" id="normal"><p>По умолчанию</p>
+                </label>
+            </ul>
+            <ul data-role="controlgroup">
+                <label>
+                    <input type="radio" checked name="dva" id="gray_text"><p>Серый</p>
+                </label>
+                <label>
+                    <input type="radio" checked name="dva" id="green_text"><p>Зеленый</p>
+                </label>
+                <label>
+                    <input type="radio" checked name="dva" id="normal_text"><p>По умолчанию</p>
+                </label>
+            </ul>
+            <div data-role="popup" data-overlay-theme="b" id="popupNew" data-transition=”pop”>
+                <div data-theme="a" data-role="header">
+                    <h1>Сохранение</h1>
+                </div>
+                <div role="main" class="ui-content">
+                    <p>Вы уверены что хоите сохранить изменения?</p>
+                    <a href="#" class="ui-btn-inline ui-btn" data-rel="back" id="save">ОК</a>
+                    <a href="#" class="ui-btn-inline ui-btn" data-rel="back">Отмена</a>
+                </div>
+
+            </div>
+    </div>
+
+</body>
+</html>
